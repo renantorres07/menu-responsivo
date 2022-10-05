@@ -1,20 +1,21 @@
 * {
+    font-family: 'Roboto Condensed';
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    outline: 0;    
+    outline: 0;
 }
 
 .nav-button {
     border: 0;
     border-radius: 4px;
     padding: 8px;
-    background-color: #006285;
+    background-color: #429d47;
     margin: 8px;
     cursor: pointer;
 }
 
-.nav-button i{
+.nav-button i {
     color: #fff;
 }
 
@@ -37,7 +38,7 @@
     margin-top: 30px;
 }
 
-.overlay a{
+.overlay a {
     padding: 8px;
     text-decoration: none;
     color: #818181;
@@ -46,11 +47,13 @@
     transition: 0.3s;
 }
 
-.overlay a:hover, .overlay a:focus{
-    color: #f1f1f1;
+.overlay a:hover,
+.overlay a:focus {
+    color: #000;
+    background-color: #fff;
 }
 
-.overlay .closebtn{
+.overlay .closebtn {
     position: absolute;
     top: 20px;
     right: 45px;
@@ -58,8 +61,12 @@
 }
 
 @media screen and (max-height: 450px) {
-    .overlay a {font-size: 20px;}
-    .overlay, .closebtn{
+    .overlay a {
+        font-size: 20px;
+    }
+
+    .overlay,
+    .closebtn {
         font-size: 40px;
         top: 15px;
         right: 35px;

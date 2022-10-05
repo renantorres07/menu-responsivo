@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#titulo {
+    font-family: sans-serif;
+    color: #006110;
+    display: flex;
+    justify-content: center;
+}
+
+#subtitulo {
+    font-family: sans-serif;
+    color: #006110;
+    display: flex;
+    justify-content: center;
+    margin-top: .5%;
+}
+
+hr {
+    position: relative;
+    margin-top: 1%;
+}
+
+body {
+    background-color: #f0f8ff;
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #429d47;
+    margin-top: 2%;
+    justify-content: center;
+}
+
+input,
+select,
+textarea,
+button,
+a {
+    border-radius: 5px;
+}
+
+.campo {
+    margin-bottom: 1em;
+}
+
+.campo label {
+    margin-bottom: 0.2em;
+    color: #429d47;
+    display: flex;
+    justify-content: center;
+}
+
+fieldset {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: none;
+}
+
+fieldset input {
+    position: relative;
+    margin-left: 45%;
+}
+
+.campo select option {
+    padding-right: 1em;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    background: #e0e0f8;
+}
+
+.botao {
+    font-size: 1.2em;
+    background: #429d47;
+    border: 0;
+    margin-bottom: 1em;
+    color: #FFFFFF;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    top: 40%;
+    margin-left: 47.5%;
+}
+
+.botao:hover {
+    background: #ccbbff;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: none;
+    cursor: pointer;
+}
+
+.cadastro a {
+    font-size: 1.2em;
+    background: #429d47;
+    border: 0;
+    margin-bottom: 1em;
+    color: #FFFFFF;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    top: 40%;
+    width: 15%;
+    margin-left: 43%;
+}
+
+.cadastro a:hover {
+    background: #ccbbff;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: none;
+    cursor: pointer;
+}
+
+.cadastro p {
+    font-size: 1.2em;
+    color: #429d47;
+    margin-bottom: .5%;
+    display: flex;
+    justify-content: center;
+    top: 40%;
+}

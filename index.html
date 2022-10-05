@@ -1,33 +1,376 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <script type="text/javascript" src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <title>Menu Responsivo</title>
+    <script type="text/javascript" src="./js/script.js"></script>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <title>Universidade Torres</title>
 </head>
+
 <body>
 
-    <div id="myNav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <header>
+        <h1>Universidade Torres</h1>
+    </header>
 
-        <div class="overlay-content">
-            <a href="#">Sobre</a>
-            <a href="#">Serviços</a>
-            <a href="#">Clientes</a>
-            <a href="#">Contatos</a>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="/" class="navbar-logo">
+                <picture>
+                    <img src="./imgs/nav-logo.jpg" alt="home image" class="nav-logo">
+                </picture><noscript></noscript>
+            </a>
+            <button class="menu-icon">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a aria-current="page" class="nav-links active-link" href="./index.html">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a aria-current="page" class="nav-links active-link" href="./cursos/cursos.html">Cursos</a>
+                </li>
+                <li class="nav-item">
+                    <a aria-current="page" class="nav-links active-link"
+                        href="./professores/professores.html">Professores</a>
+                </li>
+                <li class="nav-item">
+                    <a aria-current="page" class="nav-links active-link" href="#sobre">Sobre nós</a>
+                </li>
+                <li>
+                    <a href="login_cadastro/login.html" class="nav-links-mobile">Login</a>
+                </li>
+            </ul>
+            <a href="./login_cadastro/login.html" class="btn-mobile">
+                <button class="btn btn--outline btn--medium">
+                    Login
+                </button>
+            </a>
         </div>
+    </nav>
 
+    <section class="home" id="home-section">
+        <div class="intro">
+            <div class="profile">
+                <div class="intro-text">
+                    <h1>Bem-vindo a nossa Universidade</h1>
+                    <p>Onde você é muito mais do que os olhos podem ver.</p>
+                </div>
+                <div class="cta">
+                    <a href="#sobre">
+                        <button class="sobre-nos">Sobre nós</button>
+                    </a>
+                    <a href="#contato">
+                        <button class="contato">Contato</button>
+                    </a>
+                </div>
+                <div class="imagem">
+                    <div style="max-width: 3000px; display: block;">
+                        <img alt role="presentation" aria-hidden="true" src=""
+                            style="max-width: 100%; display: block; position: static;">
+                    </div>
+                    <img src="" alt="">
+                    <picture>
+                        <source>
+                        <img src="" alt="">
+                    </picture>
+                    <noscript></noscript>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="sobre-container" id="sobre">
+        <div class="sobre">
+            <h1 class="sobre-title">Sobre nós</h1>
+            <ul class="sobre-steps">
+                <li class="step">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="80"
+                        width="80" xmlns="http://www.w3.org/2000/svg" style="color: #429d47;">
+                        <path
+                            d="M20 2H8c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2zM8 16V4h12l.002 12H8z">
+                        </path>
+                        <path
+                            d="M4 8H2v12c0 1.103.897 2 2 2h12v-2H4V8zm8.933 3.519-1.726-1.726-1.414 1.414 3.274 3.274 5.702-6.84-1.538-1.282z">
+                        </path>
+                    </svg>
+                    <h3 class="step-title">Choose project</h3>
+                    <p class="step-paragraph">
+                        "Select one from the collection that you feel will be a perfect project to enhance your skill"
+                    </p>
+                </li>
+                <li class="step">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="80"
+                        width="80" xmlns="http://www.w3.org/2000/svg" style="color: #429d47;">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M7.167 12a3 3 0 0 1-5.74 1.223l-.928.376A4.001 4.001 0 1 0 1 9.556V8.333H0V11l.5.5h2.333v-1H1.568A3 3 0 0 1 7.167 12z">
+                        </path>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M5 2.41L5.78 2l9 6v.83L10 12.017v-1.2l3.6-2.397L6 3.35V7H5V2.41z"></path>
+                    </svg>
+                    <h3 class="step-title">Attempt yourself</h3>
+                    <p class="step-paragraph">
+                        "Download all asset and starter file and then attempt to code yourself, use your creativity"
+                    </p>
+                </li>
+                <li class="step">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="80"
+                        width="80" xmlns="http://www.w3.org/2000/svg" style="color: #429d47;">
+                        <path fill="none" d="M0 0h24v24H0z"></path>
+                        <path
+                            d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z">
+                        </path>
+                        <path d="M14 17H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"></path>
+                    </svg>
+                    <h3 class="step-title">Get help from tutorial</h3>
+                    <p class="step-paragraph">
+                        "If you stuck anywhere, try looking through the tutorial and final solution and then code"
+                    </p>
+                </li>
+                <li class="step">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 640 512" height="80"
+                        width="80" xmlns="http://www.w3.org/2000/svg" style="color: #429d47;">
+                        <path
+                            d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z">
+                        </path>
+                    </svg>
+                    <h3 class="step-title">Build project</h3>
+                    <p class="step-paragraph">
+                        "Now code a project with the help of step by step tutorial, assets and final solution"
+                    </p>
+                </li>
+            </ul>
+        </div>
     </div>
 
-    <button class="nav-button" onclick="openNav()">
-        <i class="fa-solid fa-bars fa-2a"></i>
-    </button>
+    <div class="cursos-famosos">
+        <h1 class="famoso-title">Cursos mais procurados</h1>
+    </div>
+    <div class="cursos-section">
+        <div class="cursos-container">
+            <div class="curso">
+                <a href="">
+                    <div class="curso-header">
+                        <div class="curso-imagem">
+                            <div style="max-width: 6000px; display: block;"><img alt="" role="presentation"
+                                    aria-hidden="true"
+                                    src="data:image/svg+xml;charset=utf-8,%3Csvg height='4000' width='6000' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E"
+                                    style="max-width: 100%; display: block; position: static;"></div><img
+                                aria-hidden="true" data-placeholder-image="" decoding="async"
+                                src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='400'%20height='266'%20viewBox='0%200%20400%20266'%20preserveAspectRatio='none'%3e%3cpath%20d='M226%20102l-4%202-4%203-6%204c-3%202-4%203-1%202l2%201c0%201%201%202%203%202h4l-4%205c-4%204-5%207-3%208l6%201%205%201v5c0%204%200%205%203%207l3%203-4%202c-3%201-12%202-13%201l1-3c3-2%202-5%200-7-4-4-8%200-6%206%200%203%200%203-3%203l-10-3c-7-3-8-3-2%201%207%204%2029%206%2036%202%206-3%2013-3%2016%201%202%202%203%204%203%2011%201%2010%202%2012%206%2012%203%200%203%200%202-2-3-1-1-3%203-3v-1c-1-1-2-4-2-13-1-14-2-15-10-17-6-1-6-1-5-4%200-3%201-3%203-3s2%200%201-4c0-4%200-5%203-7%202-1%203-2%204-1l1-1c0-2-3-2-4-1l-6%202c-4%201-4%201-7-2l-3-4v-3c3-2-1-8-5-8l-3%202m-152%207c-4%204-1%2011%205%2011%202%200%206-4%206-7%200-5-8-8-11-4m193%2021v2l-2%201c-3%201-3%202%201%205l2%203%203%201%205%201c2%201%200%203-1%201h-3c-3%201%203%208%206%208%202-1%202-1%202%202l2%205%206%2011%205%209h4l12-1c7-2%207-2%209%200v-2l1-4%204-2h5c2%200%202%200%201-3-2-2-3-3-4-2l-13%202c-6%200-6%200-10-3l-5-6-1-3h4l4-1h-4c-5%200-7-1-7-7v-5l6%202c6%202%2011%203%2011%201l-6-4-8-4c-1-2-4-3-7-4-4%200-5%200-8%203l-4%204v-3c-1-4-10-11-10-7M42%20169l1%208h44v-16H42v8'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e"
+                                alt="" style="opacity: 0; transition: opacity 500ms linear 0s; object-fit: cover;">
+                            <picture>
+                                <source type="image/webp" srcset="" sizes="(min-width: 6000px) 6000px, 100vw"><img
+                                    placeholder="tracedSVG" width="6000" height="4000" data-main-image=""
+                                    sizes="(min-width: 6000px) 6000px, 100vw" decoding="async" src="" srcset=""
+                                    alt="Curso 1" style="object-fit: cover; opacity: 1;">
+                            </picture><noscript></noscript>
+                        </div>
+                    </div>
+                </a>
+                <div class="curso-body">
+                    <div class="tags">
+                        <span class="alltags">HMTL / CSS</span>
+                        <span class="pricinglabel Free">Free</span>
+                    </div>
+                    <a href="">
+                        <h5 class="body-title">Curso 1</h5>
+                    </a>
+                    <p class="body-text">
+                        "404 erro page using html and css the 404 error page we’ll build in this tutorial will be pretty
+                        simple and basic where we have one image and some text with go back button"
+                    </p>
+                </div>
+            </div>
+            <div class="curso">
+                <a href="">
+                    <div class="curso-header">
+                        <div class="curso-imagem">
+                            <div style="max-width: 6000px; display: block;"><img alt="" role="presentation"
+                                    aria-hidden="true"
+                                    src="data:image/svg+xml;charset=utf-8,%3Csvg height='4000' width='6000' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E"
+                                    style="max-width: 100%; display: block; position: static;"></div><img
+                                aria-hidden="true" data-placeholder-image="" decoding="async"
+                                src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='400'%20height='266'%20viewBox='0%200%20400%20266'%20preserveAspectRatio='none'%3e%3cpath%20d='M226%20102l-4%202-4%203-6%204c-3%202-4%203-1%202l2%201c0%201%201%202%203%202h4l-4%205c-4%204-5%207-3%208l6%201%205%201v5c0%204%200%205%203%207l3%203-4%202c-3%201-12%202-13%201l1-3c3-2%202-5%200-7-4-4-8%200-6%206%200%203%200%203-3%203l-10-3c-7-3-8-3-2%201%207%204%2029%206%2036%202%206-3%2013-3%2016%201%202%202%203%204%203%2011%201%2010%202%2012%206%2012%203%200%203%200%202-2-3-1-1-3%203-3v-1c-1-1-2-4-2-13-1-14-2-15-10-17-6-1-6-1-5-4%200-3%201-3%203-3s2%200%201-4c0-4%200-5%203-7%202-1%203-2%204-1l1-1c0-2-3-2-4-1l-6%202c-4%201-4%201-7-2l-3-4v-3c3-2-1-8-5-8l-3%202m-152%207c-4%204-1%2011%205%2011%202%200%206-4%206-7%200-5-8-8-11-4m193%2021v2l-2%201c-3%201-3%202%201%205l2%203%203%201%205%201c2%201%200%203-1%201h-3c-3%201%203%208%206%208%202-1%202-1%202%202l2%205%206%2011%205%209h4l12-1c7-2%207-2%209%200v-2l1-4%204-2h5c2%200%202%200%201-3-2-2-3-3-4-2l-13%202c-6%200-6%200-10-3l-5-6-1-3h4l4-1h-4c-5%200-7-1-7-7v-5l6%202c6%202%2011%203%2011%201l-6-4-8-4c-1-2-4-3-7-4-4%200-5%200-8%203l-4%204v-3c-1-4-10-11-10-7M42%20169l1%208h44v-16H42v8'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e"
+                                alt="" style="opacity: 0; transition: opacity 500ms linear 0s; object-fit: cover;">
+                            <picture>
+                                <source type="image/webp" srcset="" sizes="(min-width: 6000px) 6000px, 100vw"><img
+                                    placeholder="tracedSVG" width="6000" height="4000" data-main-image=""
+                                    sizes="(min-width: 6000px) 6000px, 100vw" decoding="async" src="" srcset=""
+                                    alt="Curso 1" style="object-fit: cover; opacity: 1;">
+                            </picture><noscript></noscript>
+                        </div>
+                    </div>
+                </a>
+                <div class="curso-body">
+                    <div class="tags">
+                        <span class="alltags">HMTL / CSS</span>
+                        <span class="pricinglabel Free">Free</span>
+                    </div>
+                    <a href="">
+                        <h5 class="body-title">Curso 2</h5>
+                    </a>
+                    <p class="body-text">
+                        "404 erro page using html and css the 404 error page we’ll build in this tutorial will be pretty
+                        simple and basic where we have one image and some text with go back button"
+                    </p>
+                </div>
+            </div>
+            <div class="curso">
+                <a href="">
+                    <div class="curso-header">
+                        <div class="curso-imagem">
+                            <div style="max-width: 6000px; display: block;"><img alt="" role="presentation"
+                                    aria-hidden="true"
+                                    src="data:image/svg+xml;charset=utf-8,%3Csvg height='4000' width='6000' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E"
+                                    style="max-width: 100%; display: block; position: static;"></div><img
+                                aria-hidden="true" data-placeholder-image="" decoding="async"
+                                src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='400'%20height='266'%20viewBox='0%200%20400%20266'%20preserveAspectRatio='none'%3e%3cpath%20d='M226%20102l-4%202-4%203-6%204c-3%202-4%203-1%202l2%201c0%201%201%202%203%202h4l-4%205c-4%204-5%207-3%208l6%201%205%201v5c0%204%200%205%203%207l3%203-4%202c-3%201-12%202-13%201l1-3c3-2%202-5%200-7-4-4-8%200-6%206%200%203%200%203-3%203l-10-3c-7-3-8-3-2%201%207%204%2029%206%2036%202%206-3%2013-3%2016%201%202%202%203%204%203%2011%201%2010%202%2012%206%2012%203%200%203%200%202-2-3-1-1-3%203-3v-1c-1-1-2-4-2-13-1-14-2-15-10-17-6-1-6-1-5-4%200-3%201-3%203-3s2%200%201-4c0-4%200-5%203-7%202-1%203-2%204-1l1-1c0-2-3-2-4-1l-6%202c-4%201-4%201-7-2l-3-4v-3c3-2-1-8-5-8l-3%202m-152%207c-4%204-1%2011%205%2011%202%200%206-4%206-7%200-5-8-8-11-4m193%2021v2l-2%201c-3%201-3%202%201%205l2%203%203%201%205%201c2%201%200%203-1%201h-3c-3%201%203%208%206%208%202-1%202-1%202%202l2%205%206%2011%205%209h4l12-1c7-2%207-2%209%200v-2l1-4%204-2h5c2%200%202%200%201-3-2-2-3-3-4-2l-13%202c-6%200-6%200-10-3l-5-6-1-3h4l4-1h-4c-5%200-7-1-7-7v-5l6%202c6%202%2011%203%2011%201l-6-4-8-4c-1-2-4-3-7-4-4%200-5%200-8%203l-4%204v-3c-1-4-10-11-10-7M42%20169l1%208h44v-16H42v8'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e"
+                                alt="" style="opacity: 0; transition: opacity 500ms linear 0s; object-fit: cover;">
+                            <picture>
+                                <source type="image/webp" srcset="" sizes="(min-width: 6000px) 6000px, 100vw"><img
+                                    placeholder="tracedSVG" width="6000" height="4000" data-main-image=""
+                                    sizes="(min-width: 6000px) 6000px, 100vw" decoding="async" src="" srcset=""
+                                    alt="Curso 1" style="object-fit: cover; opacity: 1;">
+                            </picture><noscript></noscript>
+                        </div>
+                    </div>
+                </a>
+                <div class="curso-body">
+                    <div class="tags">
+                        <span class="alltags">HMTL / CSS</span>
+                        <span class="pricinglabel Free">Free</span>
+                    </div>
+                    <a href="">
+                        <h5 class="body-title">Curso 3</h5>
+                    </a>
+                    <p class="body-text">
+                        "404 erro page using html and css the 404 error page we’ll build in this tutorial will be pretty
+                        simple and basic where we have one image and some text with go back button"
+                    </p>
+                </div>
+            </div>
+            <div class="curso">
+                <a href="">
+                    <div class="curso-header">
+                        <div class="curso-imagem">
+                            <div style="max-width: 6000px; display: block;"><img alt="" role="presentation"
+                                    aria-hidden="true"
+                                    src="data:image/svg+xml;charset=utf-8,%3Csvg height='4000' width='6000' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E"
+                                    style="max-width: 100%; display: block; position: static;"></div><img
+                                aria-hidden="true" data-placeholder-image="" decoding="async"
+                                src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='400'%20height='266'%20viewBox='0%200%20400%20266'%20preserveAspectRatio='none'%3e%3cpath%20d='M226%20102l-4%202-4%203-6%204c-3%202-4%203-1%202l2%201c0%201%201%202%203%202h4l-4%205c-4%204-5%207-3%208l6%201%205%201v5c0%204%200%205%203%207l3%203-4%202c-3%201-12%202-13%201l1-3c3-2%202-5%200-7-4-4-8%200-6%206%200%203%200%203-3%203l-10-3c-7-3-8-3-2%201%207%204%2029%206%2036%202%206-3%2013-3%2016%201%202%202%203%204%203%2011%201%2010%202%2012%206%2012%203%200%203%200%202-2-3-1-1-3%203-3v-1c-1-1-2-4-2-13-1-14-2-15-10-17-6-1-6-1-5-4%200-3%201-3%203-3s2%200%201-4c0-4%200-5%203-7%202-1%203-2%204-1l1-1c0-2-3-2-4-1l-6%202c-4%201-4%201-7-2l-3-4v-3c3-2-1-8-5-8l-3%202m-152%207c-4%204-1%2011%205%2011%202%200%206-4%206-7%200-5-8-8-11-4m193%2021v2l-2%201c-3%201-3%202%201%205l2%203%203%201%205%201c2%201%200%203-1%201h-3c-3%201%203%208%206%208%202-1%202-1%202%202l2%205%206%2011%205%209h4l12-1c7-2%207-2%209%200v-2l1-4%204-2h5c2%200%202%200%201-3-2-2-3-3-4-2l-13%202c-6%200-6%200-10-3l-5-6-1-3h4l4-1h-4c-5%200-7-1-7-7v-5l6%202c6%202%2011%203%2011%201l-6-4-8-4c-1-2-4-3-7-4-4%200-5%200-8%203l-4%204v-3c-1-4-10-11-10-7M42%20169l1%208h44v-16H42v8'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e"
+                                alt="" style="opacity: 0; transition: opacity 500ms linear 0s; object-fit: cover;">
+                            <picture>
+                                <source type="image/webp" srcset="" sizes="(min-width: 6000px) 6000px, 100vw"><img
+                                    placeholder="tracedSVG" width="6000" height="4000" data-main-image=""
+                                    sizes="(min-width: 6000px) 6000px, 100vw" decoding="async" src="" srcset=""
+                                    alt="Curso 1" style="object-fit: cover; opacity: 1;">
+                            </picture><noscript></noscript>
+                        </div>
+                    </div>
+                </a>
+                <div class="curso-body">
+                    <div class="tags">
+                        <span class="alltags">HMTL / CSS</span>
+                        <span class="pricinglabel Free">Free</span>
+                    </div>
+                    <a href="">
+                        <h5 class="body-title">Curso 4</h5>
+                    </a>
+                    <p class="body-text">
+                        "404 erro page using html and css the 404 error page we’ll build in this tutorial will be pretty
+                        simple and basic where we have one image and some text with go back button"
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <div class="footer-container">
+        <div class="footer-links">
+            <div class="footer-link-wrapper">
+                <div class="footer-link-items">
+                    <h2>Sobre nós</h2>
+                    <a href="./cursos/cursos.html">Cursos</a>
+                    <a href="#sobre">Sobre nós</a>
+                </div>
+                <div class="footer-link-items">
+                    <h2>Contato</h2>
+                    <a aria-current="page" class="" href="/">Contato</a>
+                </div>
+            </div>
+            <div class="footer-link-wrapper">
+                <div class="footer-link-items">
+                    <h2>Instituição</h2>
+                    <a href="./professores/professores.html">Professores</a>
+                </div>
+                <div class="footer-link-items">
+                    <h2>Redes Sociais</h2>
+                    <a href="https://www.instagram.com">Instagram</a>
+                    <a href="https://www.facebook.com">Facebook</a>
+                    <a href="https://www.twitter.com">Twitter</a>
+                </div>
+            </div>
+        </div>
+        <section class="social-media">
+            <div class="social-media-wrap">
+                <div class="footer-logo">
+                    <a aria-current="page" class="social-logo" href="/">
+                        <div class="footer-image">
+                            <div style="max-width: 192px; display: block;"><img alt="" role="presentation"
+                                    aria-hidden="true"
+                                    src="data:image/svg+xml;charset=utf-8,%3Csvg height='44' width='192' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E"
+                                    style="max-width: 100%; display: block; position: static;"></div><img
+                                aria-hidden="true" data-placeholder-image="" decoding="async"
+                                src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='192'%20height='44'%20viewBox='0%200%20192%2044'%20preserveAspectRatio='none'%3e%3cpath%20d='M40%2028a413%20413%200%200010%202%201527%201527%200%2001-24%202h22l-21%201-22%202%2010%201a13469%2013469%200%2001154-9L40%2028'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e"
+                                alt="" style="opacity: 0; transition: opacity 500ms linear 0s; object-fit: cover;">
+                            <picture>
+                                <source type="image/webp" srcset="/static/a7dd97c6310e850b6a4d411754a61f13/66a57/footerlogo.webp 48w,
+                        /static/a7dd97c6310e850b6a4d411754a61f13/7cffb/footerlogo.webp 96w,
+                        /static/a7dd97c6310e850b6a4d411754a61f13/88af2/footerlogo.webp 192w"
+                                    sizes="(min-width: 192px) 192px, 100vw"><img width="192" height="44"
+                                    data-main-image="" sizes="(min-width: 192px) 192px, 100vw" decoding="async"
+                                    src="/static/a7dd97c6310e850b6a4d411754a61f13/7e834/footerlogo.png" srcset="/static/a7dd97c6310e850b6a4d411754a61f13/4371c/footerlogo.png 48w,
+                        /static/a7dd97c6310e850b6a4d411754a61f13/d0bf1/footerlogo.png 96w,
+                        /static/a7dd97c6310e850b6a4d411754a61f13/7e834/footerlogo.png 192w" alt="footer logo"
+                                    style="object-fit: cover; opacity: 1;">
+                            </picture><noscript></noscript>
+                        </div>
+                    </a>
+                </div>
+                <small class="website-rights">Renan Torres © 2022</small>
+                <div class="social-icons" id="contato">
+                    <a class="social-icon-link facebook" href="https://www.facebook.com/renan.marson" target="_blank"
+                        rel="noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="social-icon-link instagram" href="https://www.instagram.com/renantorres07/"
+                        target="_blank" rel="noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="social-icon-link twitter" href="https://twitter.com/renantorres0" target="_blank"
+                        rel="noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="social-icon-link twitter" href="https://www.linkedin.com/in/renan-torres-121a06106/"
+                        target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
 </body>
+
 </html>
