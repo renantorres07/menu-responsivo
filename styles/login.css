@@ -3,6 +3,109 @@
     margin: 0;
 }
 
+header {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    color: #006110;
+}
+
+.navbar {
+    font-size: 1.2rem;
+    height: 100px;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar-container {
+    height: 80px;
+    max-width: 1500px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-logo {
+    align-items: center;
+    color: #111;
+    cursor: pointer;
+    display: flex;
+    font-size: 2rem;
+    justify-self: start;
+    margin-left: 1.5rem;
+    text-decoration: none;
+}
+
+.nav-logo {
+    height: 120px;
+    width: 200px;
+    border: none;
+}
+
+.menu-icon,
+.nav-links-mobile {
+    display: none;
+}
+
+.fa-bars {
+    color: #111;
+}
+
+.nav-menu {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: end;
+    list-style: none;
+    margin-right: 2rem;
+    text-align: center;
+    width: 50%;
+}
+
+.nav-links:hover {
+    background-color: #006110;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.active-link {
+    color: #19191b;
+    font-weight: 700;
+}
+
+.nav-links {
+    align-items: center;
+    color: #696871;
+    display: flex;
+    font-size: 1rem;
+    height: 100%;
+    padding: 0.5rem 1rem;
+    position: relative;
+    text-decoration: none;
+}
+
+.btn--medium {
+    font-size: 14px;
+    padding: 8px 20px;
+}
+
+.btn--outline {
+    font-weight: 700;
+    background-color: #006110;
+    color: #fff;
+    padding: 8px 20px;
+    transition: all .3s ease-out;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn--outline:hover {
+    background-color: #fff;
+    border: 2px solid #006110;
+    color: #006110;
+}
+
+
 #titulo {
     font-family: sans-serif;
     color: #006110;
@@ -95,6 +198,15 @@ fieldset input {
     cursor: pointer;
 }
 
+.fa-eye {
+    position: absolute;
+    cursor: pointer;
+}
+
+.fa-eye:hover {
+    color: #ccbbff;
+}
+
 .cadastro a {
     font-size: 1.2em;
     background: #429d47;
@@ -125,4 +237,13 @@ fieldset input {
     display: flex;
     justify-content: center;
     top: 40%;
+}
+
+#msgError {
+    text-align: center;
+    color: #ff0000;
+    background-color: #ffbbbb;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
 }

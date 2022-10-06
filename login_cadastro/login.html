@@ -10,7 +10,7 @@
         integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <script type="text/javascript" src="../js/script.js"></script>
+    <script type="text/javascript" src="../js/login.js"></script>
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,37 +22,63 @@
 </head>
 
 <body>
+    <header>
+        <h1>Universidade Torres</h1>
+    </header>
+    <hr>
     <div>
         <h1 id="titulo">Login</h1>
         <p id="subtitulo">Faça seu login</p>
-        <hr>
     </div>
 
-    <div id="myNav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-        <div class="overlay-content">
-            <a href="../index.html">Home</a>
-            <a href="../cursos/cursos.html">Cursos</a>
-            <a href="../professores/professores.html">Professores</a>
-            <a href="../login_cadastro/login.html">Login/Cadastro</a>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="/" class="navbar-logo">
+                <picture>
+                    <img src="./imgs/nav-logo.jpg" alt="home image" class="nav-logo">
+                </picture><noscript></noscript>
+            </a>
+            <button class="menu-icon">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a aria-current="page" class="nav-links active-link" href="../index.html">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a aria-current="page" class="nav-links active-link" href="../cursos/cursos.html">Cursos</a>
+                </li>
+                <li class="nav-item">
+                    <a aria-current="page" class="nav-links active-link"
+                        href="../professores/professores.html">Professores</a>
+                </li>
+                <li class="nav-item">
+                    <a aria-current="page" class="nav-links active-link" href="../index.html#sobre">Sobre nós</a>
+                </li>
+                <li>
+                    <a href="login.html" class="nav-links-mobile">Login</a>
+                </li>
+            </ul>
+            <a href="login.html" class="btn-mobile">
+                <button class="btn btn--outline btn--medium">
+                    Login
+                </button>
+            </a>
         </div>
+    </nav>
 
-    </div>
-
-    <button class="nav-button" onclick="openNav()">
-        <i class="fa-solid fa-bars fa-2a"></i>
-    </button>
+    <div id="msgError"></div>
 
     <form>
         <fieldset class="grupo">
             <div class="campo">
-                <label for="username"><strong>Username</strong></label>
+                <label for="username" id="userLabel"><strong>Username</strong></label>
                 <input type="text" name="username" id="username" required>
             </div>
             <div class="campo">
-                <label for="senha"><strong>Senha</strong></label>
+                <label for="senha" id="senhaLabel"><strong>Senha</strong></label>
                 <input type="password" name="senha" id="senha" required>
+                <i class="fa fa-eye" aria-hidden="true"></i>
             </div>
         </fieldset>
 

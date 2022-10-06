@@ -19,11 +19,11 @@ header {
 }
 
 .navbar-container {
-    height: 100px;
-    max-width: 100%;
+    height: 80px;
+    max-width: 1500px;
     align-items: center;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .navbar-logo {
@@ -57,6 +57,7 @@ header {
     grid-template-columns: repeat(4, auto);
     justify-content: end;
     list-style: none;
+    margin-right: 2rem;
     text-align: center;
     width: 50%;
 }
@@ -105,154 +106,64 @@ header {
     color: #006110;
 }
 
-.home {
+.cursosNav {
+    display: flex;
+    justify-content: center;
+    margin: 2% 0;
+}
+
+.btn,
+.cursosNav {
     align-items: center;
-    display: flex;
-    margin: auto;
-    min-height: 85vh;
-    width: 80%;
 }
 
-.intro {
-    flex: 1 1;
-}
-
-.intro-text {
-    margin-top: 50px;
-    color: #006110;
-}
-
-.profile {
-    display: flex;
-    flex: 1 1;
-    height: 50vh;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-.cta {
-    font-weight: 500;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 50px;
-}
-
-div {
-    display: block;
-}
-
-a {
-    font-size: 15px;
-    text-decoration: none;
-}
-
-.sobre-nos {
-    background: transparent;
-    border: 2px solid;
-    border-radius: 10px;
-    color: #006110;
-    cursor: pointer;
-    font-size: 16px;
-    height: 50px;
-    outline: none;
-    width: 150px;
-}
-
-.homeImage {
-    height: 400px;
-    width: 700px;
-    border-radius: 10px;
-}
-
-.contato {
+.cursosnavbtn {
+    background-color: #429d47;
     border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 16px;
-    height: 50px;
-    margin: 20px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 11px;
     outline: none;
-    width: 150px;
+    padding: 0 10px;
+    width: -webkit-max-content;
+    width: max-content;
 }
 
-.contato,
-.sobre-nos:hover {
-    background: #006110;
-    color: #f0f8ff;
+@media (min-width: 600px) {
+    .searchbar {
+        margin: 0;
+    }
 }
 
-.contato:hover {
-    background: white;
-    color: #006110;
-    border: 2px solid;
-}
-
-.sobre-container {
+.searchbar {
     align-items: center;
     display: flex;
     justify-content: center;
-    min-height: 80vh;
-}
-
-.sobre,
-.sobre-title {
+    margin: 1rem;
     text-align: center;
 }
 
-.sobre-title {
+.searchInput {
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    outline: none;
+}
+
+.totalCount {
     font-size: 1.2rem;
-    text-transform: uppercase;
-    word-spacing: 5px;
+    margin: auto 25px;
+    -webkit-text-decoration: wavy;
+    text-decoration: wavy;
 }
 
-.sobre-steps {
-    display: grid;
-    grid-area: center;
-    grid-template-columns: repeat(4, 1fr);
-    height: 100%;
-    list-style-type: none;
-    margin: 5rem auto auto;
-    width: 95%;
-}
-
-.step-title {
-    font-size: 1.4rem;
-    margin-top: 1rem;
-}
-
-.step-paragraph {
-    color: #5c5151;
+p {
     font-family: eurostile, sans-serif;
-    font-size: 1rem;
-    letter-spacing: 1px;
-    line-height: 25px;
-    padding: 1.5em;
-}
-
-.cursos-famosos {
-    background: #006110;
-    border-radius: 0 0 10px 10px;
-    margin: auto;
-    padding: 6%;
-    text-align: center;
-    width: 100%;
-}
-
-.famoso-title {
-    font-size: 1.2rem;
-    margin-bottom: 5rem;
-    text-align: center;
-    word-spacing: 5px;
-    color: #fff;
-    font-weight: 700;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-}
-
-.cursos-section {
-    margin: -12% 0 0;
-    position: relative;
+    font-size: 25px;
+    letter-spacing: 2px;
+    margin-top: 5px;
 }
 
 .cursos-container {
@@ -279,6 +190,12 @@ a {
     }
 }
 
+.curso,
+.curso-header,
+.curso-img {
+    overflow: hidden;
+}
+
 .curso {
     overflow: hidden;
     word-wrap: break-word;
@@ -294,8 +211,9 @@ a {
     width: fit-content;
 }
 
-.curso-header {
-    overflow: hidden;
+a {
+    font-size: 15px;
+    text-decoration: none;
 }
 
 .curso-imagem img {
@@ -335,7 +253,7 @@ a {
     background: #006110;
 }
 
-.body-title {
+.curso-title {
     font-family: Roboto, sans-serif;
     font-size: 25px;
     font-weight: 500;
@@ -343,7 +261,15 @@ a {
     margin-top: 0.75rem;
 }
 
-.body-text {
+.professor {
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    margin-top: 0.75rem;
+}
+
+.curso-text {
     color: #5c5151;
     font-family: Roboto, sans-serif;
     font-size: 1rem;
@@ -364,7 +290,7 @@ a {
 
 .footer-container {
     background-color: #242424;
-    padding-top: 5%;
+    padding: 4rem 0 2rem;
 }
 
 .footer-links {
@@ -428,6 +354,7 @@ a {
 .social-logo,
 .website-rights {
     color: #fff;
+    margin-bottom: 16px;
 }
 
 .website-rights {

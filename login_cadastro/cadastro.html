@@ -6,52 +6,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../styles/cadastro.css" media="screen">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Cadastro</title>
+    <script rel="text/javascript" href="../js/cadastro.js"></script>
 </head>
 
 <body>
-    <div>
-        <h1 id="titulo">Cadastro de DEVs</h1>
-        <p id="subtitulo">Complete suas informações</p>
-    </div>
+
+    <h1 id="titulo">Cadastre-se</h1>
+    <p id="subtitulo">Complete suas informações</p>
+
+    <div id="msgError"></div>
+    <div id="msgSuccess"></div>
     <form>
         <fieldset class="grupo">
             <div class="campo">
-                <label for="nome"><strong>Nome:</strong></label>
+                <label for="nome" id="labelNome"><strong>Nome:</strong></label>
                 <input type="text" name="nome" id="nome" required>
             </div>
 
             <div class="campo">
-                <label for="sobrenome"><strong>Sobrenome:</strong></label>
+                <label for="sobrenome" id="labelSobrenome"><strong>Sobrenome:</strong></label>
                 <input type="text" name="sobrenome" id="sobrenome" required>
             </div>
         </fieldset>
 
-        <div class="campo">
-            <label for="email"><strong>E-mail:</strong></label>
-            <input type="email" name="email" id="email" required>
-        </div>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="email" id="labelEmail"><strong>E-mail:</strong></label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="campo">
+                <label for="senha" id="labelSenha"><strong>Senha:</strong></label>
+                <input type="password" name="senha" id="senha" required>
+                <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
+                </input>
+            </div>
+        </fieldset>
 
         <div class="campo">
-            <label><strong>De qual lado da aplicação você desenvolve</strong></label>
-            <label>
-                <input type="radio" name="devweb" id="frontend" checked>Front-End
-            </label>
-            <label>
-                <input type="radio" name="devweb" id="backend">Back-End
-            </label>
-            <label>
-                <input type="radio" name="devweb" id="fullstack">Full-Stack
-            </label>
-        </div>
-
-        <div class="campo">
-            <label for="senioridade"><strong>Senioridade:</strong></label>
+            <label for="senioridade"><strong>Voce é:</strong></label>
             <select id="senioridade">
                 <option selected disabled value="">Selecione</option>
-                <option>Júnior</option>
-                <option>Pleno</option>
-                <option>Senior</option>
+                <option>Professor</option>
+                <option>Aluno</option>
             </select>
         </div>
 

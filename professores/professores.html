@@ -12,6 +12,7 @@
 
     <script type="text/javascript" src="../js/script.js"></script>
     <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/professores.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -22,21 +23,178 @@
 
 <body>
 
-    <div id="myNav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <header>
+        <h1>Universidade Torres</h1>
+    </header>
 
-        <div class="overlay-content">
-            <a href="../index.html">Home</a>
-            <a href="../cursos/cursos.html">Cursos</a>
-            <a href="../professores/professores.html">Professores</a>
-            <a href="../login_cadastro/login.html">Login/Cadastro</a>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="/" class="navbar-logo">
+                <picture>
+                    <img src="./imgs/nav-logo.jpg" alt="home image" class="nav-logo">
+                </picture><noscript></noscript>
+            </a>
+            <button class="menu-icon">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a aria-current="page" class="nav-links active-link" href="../index.html">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a aria-current="page" class="nav-links active-link" href="../cursos/cursos.html">Cursos</a>
+                </li>
+                <li class="nav-item">
+                    <a aria-current="page" class="nav-links active-link" href="professores.html">Professores</a>
+                </li>
+                <li class="nav-item">
+                    <a aria-current="page" class="nav-links active-link" href="../index.html#sobre">Sobre nós</a>
+                </li>
+                <li>
+                    <a href="../login_cadastro/login.html" class="nav-links-mobile">Login</a>
+                </li>
+            </ul>
+            <a href="../login_cadastro/login.html" class="btn-mobile">
+                <button class="btn btn--outline btn--medium">
+                    Login
+                </button>
+            </a>
         </div>
+    </nav>
 
+    <div class="professores-container">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-img">
+                    <picture>
+                        <img src="" alt="Professor 1">
+                    </picture><noscript></noscript>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="tags">
+                    <span class="alltags">Exatas</span>
+                    <span class="formationLabel Harvard">Harvard</span>
+                </div>
+                <div class="card-title">Professor 1</div>
+                <p class="card-text">
+                    "404 erro page using html and css the 404 error page we’ll build in this tutorial will be pretty
+                    simple and basic where we have one image and some text with go back button"
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-img">
+                    <picture>
+                        <img src="" alt="Professor 1">
+                    </picture><noscript></noscript>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="tags">
+                    <span class="alltags">Exatas</span>
+                    <span class="formationLabel Harvard">Oxford</span>
+                </div>
+                <div class="card-title">Professor 2</div>
+                <p class="card-text">
+                    "404 erro page using html and css the 404 error page we’ll build in this tutorial will be pretty
+                    simple and basic where we have one image and some text with go back button"
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-img">
+                    <picture>
+                        <img src="" alt="Professor 1">
+                    </picture><noscript></noscript>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="tags">
+                    <span class="alltags">Exatas</span>
+                    <span class="formationLabel Harvard">UNC</span>
+                </div>
+                <div class="card-title">Professor 3</div>
+                <p class="card-text">
+                    "404 erro page using html and css the 404 error page we’ll build in this tutorial will be pretty
+                    simple and basic where we have one image and some text with go back button"
+                </p>
+            </div>
+        </div>
     </div>
 
-    <button class="nav-button" onclick="openNav()">
-        <i class="fa-solid fa-bars fa-2a"></i>
-    </button>
+    <div class="footer-container">
+        <div class="footer-links">
+            <div class="footer-link-wrapper">
+                <div class="footer-link-items">
+                    <h2>Sobre nós</h2>
+                    <a href="./cursos/cursos.html">Cursos</a>
+                    <a href="#sobre">Sobre nós</a>
+                </div>
+                <div class="footer-link-items">
+                    <h2>Contato</h2>
+                    <a aria-current="page" class="" href="/">Contato</a>
+                </div>
+            </div>
+            <div class="footer-link-wrapper">
+                <div class="footer-link-items">
+                    <h2>Instituição</h2>
+                    <a href="./professores/professores.html">Professores</a>
+                </div>
+                <div class="footer-link-items">
+                    <h2>Redes Sociais</h2>
+                    <a href="https://www.instagram.com">Instagram</a>
+                    <a href="https://www.facebook.com">Facebook</a>
+                    <a href="https://www.twitter.com">Twitter</a>
+                </div>
+            </div>
+        </div>
+        <section class="social-media">
+            <div class="social-media-wrap">
+                <div class="footer-logo">
+                    <a aria-current="page" class="social-logo" href="/">
+                        <div class="footer-image">
+                            <div style="max-width: 192px; display: block;"><img alt="" role="presentation"
+                                    aria-hidden="true"
+                                    src="data:image/svg+xml;charset=utf-8,%3Csvg height='44' width='192' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E"
+                                    style="max-width: 100%; display: block; position: static;"></div><img
+                                aria-hidden="true" data-placeholder-image="" decoding="async"
+                                src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='192'%20height='44'%20viewBox='0%200%20192%2044'%20preserveAspectRatio='none'%3e%3cpath%20d='M40%2028a413%20413%200%200010%202%201527%201527%200%2001-24%202h22l-21%201-22%202%2010%201a13469%2013469%200%2001154-9L40%2028'%20fill='%23d3d3d3'%20fill-rule='evenodd'/%3e%3c/svg%3e"
+                                alt="" style="opacity: 0; transition: opacity 500ms linear 0s; object-fit: cover;">
+                            <picture>
+                                <source type="image/webp" srcset="/static/a7dd97c6310e850b6a4d411754a61f13/66a57/footerlogo.webp 48w,
+                        /static/a7dd97c6310e850b6a4d411754a61f13/7cffb/footerlogo.webp 96w,
+                        /static/a7dd97c6310e850b6a4d411754a61f13/88af2/footerlogo.webp 192w"
+                                    sizes="(min-width: 192px) 192px, 100vw"><img width="192" height="44"
+                                    data-main-image="" sizes="(min-width: 192px) 192px, 100vw" decoding="async"
+                                    src="/static/a7dd97c6310e850b6a4d411754a61f13/7e834/footerlogo.png" srcset="/static/a7dd97c6310e850b6a4d411754a61f13/4371c/footerlogo.png 48w,
+                        /static/a7dd97c6310e850b6a4d411754a61f13/d0bf1/footerlogo.png 96w,
+                        /static/a7dd97c6310e850b6a4d411754a61f13/7e834/footerlogo.png 192w" alt="footer logo"
+                                    style="object-fit: cover; opacity: 1;">
+                            </picture><noscript></noscript>
+                        </div>
+                    </a>
+                </div>
+                <small class="website-rights">Renan Torres © 2022</small>
+                <div class="social-icons" id="contato">
+                    <a class="social-icon-link facebook" href="https://www.facebook.com/renan.marson" target="_blank"
+                        rel="noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="social-icon-link instagram" href="https://www.instagram.com/renantorres07/"
+                        target="_blank" rel="noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="social-icon-link twitter" href="https://twitter.com/renantorres0" target="_blank"
+                        rel="noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="social-icon-link twitter" href="https://www.linkedin.com/in/renan-torres-121a06106/"
+                        target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
 
 </body>
 

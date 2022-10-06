@@ -84,6 +84,7 @@ fieldset.grupo .campo {
 
 .campo input[type="text"],
 .campo input[type="email"],
+.campo input[type="password"],
 .campo select,
 .campo textarea {
     padding: 0.2em;
@@ -100,6 +101,32 @@ fieldset.grupo .campo {
 .campo select:focus,
 .campo textarea:focus {
     background: #e0e0f8;
+}
+
+.fa-eye {
+    cursor: pointer;
+}
+
+.fa-eye:hover {
+    color: #ccbbff;
+}
+
+#msgError {
+    text-align: center;
+    color: #ff0000;
+    background-color: #ffbbbb;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+}
+
+#msgSuccess {
+    text-align: center;
+    color: #00bb00;
+    background-color: #bbffbe;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
 }
 
 .botao {
