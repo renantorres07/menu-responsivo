@@ -257,12 +257,12 @@ a {
 
 .cursos-container {
     grid-gap: 25px;
-    display: grid;
-    margin: auto;
-    padding: 1rem;
-    width: 100%;
-    -webkit-animation: fadeEffect 1s;
+    display: flex;
+    padding: 2rem;
     animation: fadeEffect 1s;
+    height: 600px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 @media (min-width: 900px) {
@@ -275,7 +275,7 @@ a {
 
 @media (min-width: 600px) {
     .cursos-container {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -291,7 +291,7 @@ a {
     min-width: 0;
     position: relative;
     height: fit-content;
-    width: fit-content;
+    width: 600px;
 }
 
 .curso-header {
@@ -301,7 +301,7 @@ a {
 .curso-imagem img {
     display: inline-block;
     height: 400px;
-    width: 610px;
+    width: 600px;
 }
 
 .curso-body {
@@ -354,16 +354,13 @@ a {
     width: 90%;
 }
 
-.footer-container,
-.footer-subscription {
+.footer-container {
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.footer-container {
     background-color: #242424;
+    margin-top: 45%;
     padding-top: 5%;
 }
 

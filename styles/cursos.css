@@ -129,6 +129,11 @@ header {
     padding: 0 10px;
     width: -webkit-max-content;
     width: max-content;
+    cursor: pointer;
+}
+
+.cursosnavbtn.active {
+    background-color: #242424;
 }
 
 @media (min-width: 600px) {
@@ -167,7 +172,7 @@ p {
 }
 
 .cursos-container {
-    grid-gap: 25px;
+    grid-gap: 25px 50px;
     display: grid;
     margin: auto;
     padding: 1rem;
@@ -208,7 +213,7 @@ p {
     min-width: 0;
     position: relative;
     height: fit-content;
-    width: fit-content;
+    width: 700px;
 }
 
 a {
@@ -219,7 +224,7 @@ a {
 .curso-imagem img {
     display: inline-block;
     height: 400px;
-    width: 610px;
+    width: 700px;
 }
 
 .curso-body {
