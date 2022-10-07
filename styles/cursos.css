@@ -185,7 +185,7 @@ p {
     .cursos-container {
         grid-template-columns: repeat(3, 1fr);
         margin: 25px auto;
-        width: 97%;
+        width: 100%;
     }
 }
 
@@ -213,7 +213,11 @@ p {
     min-width: 0;
     position: relative;
     height: fit-content;
-    width: 700px;
+    width: 600px;
+}
+
+.curso:hover {
+    transform: scale(1.05);
 }
 
 a {
@@ -224,7 +228,7 @@ a {
 .curso-imagem img {
     display: inline-block;
     height: 400px;
-    width: 700px;
+    width: 600px;
 }
 
 .curso-body {

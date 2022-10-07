@@ -291,7 +291,7 @@ a {
     min-width: 0;
     position: relative;
     height: fit-content;
-    width: 600px;
+    width: 500px;
 }
 
 .curso-header {
@@ -360,7 +360,7 @@ a {
     flex-direction: column;
     justify-content: center;
     background-color: #242424;
-    margin-top: 45%;
+    margin-top: 65%;
     padding-top: 5%;
 }
 

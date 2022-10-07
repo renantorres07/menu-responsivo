@@ -135,10 +135,10 @@ header {
     overflow: hidden;
 }
 
-.card-img img{
+.card-img img {
     transition: all .2s linear;
-    height: 400px;
-    width: 600px;
+    height: 350px;
+    width: 500px;
 }
 
 .card {
@@ -152,6 +152,10 @@ header {
     min-width: 0;
     height: fit-content;
     width: 600px;
+}
+
+.card:hover {
+    transform: scale(1.1);
 }
 
 .card-body {

@@ -8,6 +8,7 @@ header {
     display: flex;
     justify-content: center;
     color: #006110;
+    padding-bottom: 2%;
 }
 
 .navbar {
@@ -119,6 +120,7 @@ header {
     display: flex;
     justify-content: center;
     margin-top: .5%;
+    padding-bottom: 2%;
 }
 
 hr {
